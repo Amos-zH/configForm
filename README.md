@@ -1,13 +1,14 @@
 # vue3cli5-project
 
 ## 技术栈
-* vue3
-* vue cli5
-* vuex4
-* vue-router4
+* [vue3](https://cn.vuejs.org/guide/introduction.html)
+* [vue cli5](https://cli.vuejs.org/zh/guide/)
+* [vuex4](https://vuex.vuejs.org/zh/installation.html)
+* [vue-router4](https://router.vuejs.org/zh/introduction.html)
 * sass
 * eslint
 * webpack5
+* [Axios](https://www.axios-http.cn/docs/intro)
 
 
 ## Project setup
