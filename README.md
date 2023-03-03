@@ -9,6 +9,7 @@
 * eslint
 * webpack5
 
+
 ## Project setup
 ```
 yarn install
