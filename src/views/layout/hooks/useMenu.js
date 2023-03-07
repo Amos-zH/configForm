@@ -7,7 +7,7 @@ import { useMutations, useGetters } from '@store/useStore'
 export default function useMenu () {
   const router = useRouter()
   const store = useStore()
-  const menuList = ref([])
+  const menuList = computed(() => store.state.menu.menuList)
   const selectedMenu = computed(() => [store.state.menu.activeMenu])
   const openMenu = ref([])
 
@@ -74,7 +74,7 @@ export default function useMenu () {
   function fetchMenu () {
     getMenu().then(res => {
       if (res.code === '200') {
-        menuList.value = res.data
+        // menuList.value = res.data
         setMenuList(res.data)
         initMenu()
         initTab()

@@ -48,12 +48,12 @@ const routes = [
       },
     ],
   },
-  {
-    // 匹配所有路由 https://router.vuejs.org/zh/guide/essentials/dynamic-matching.html#%E6%8D%95%E8%8E%B7%E6%89%80%E6%9C%89%E8%B7%AF%E7%94%B1%E6%88%96-404-not-found-%E8%B7%AF%E7%94%B1
-    path: '/:pathMatch(.*)*',
-    redirect: '/404',
-    name: 'NotFound',
-  },
+  // {
+  //   // 匹配所有路由 https://router.vuejs.org/zh/guide/essentials/dynamic-matching.html#%E6%8D%95%E8%8E%B7%E6%89%80%E6%9C%89%E8%B7%AF%E7%94%B1%E6%88%96-404-not-found-%E8%B7%AF%E7%94%B1
+  //   path: '/:pathMatch(.*)*',
+  //   redirect: '/404',
+  //   name: 'NotFound',
+  // },
   {
     path: '/404',
     name: '404',
