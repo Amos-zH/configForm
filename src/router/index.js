@@ -62,8 +62,9 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(window.__POWERED_BY_QIANKUN__ ? process.env.VUE_APP_BASE_URL : '/'),
   routes,
+  base: window.__POWERED_BY_QIANKUN__ ? process.env.VUE_APP_BASE_URL : '/',
 })
 
 export default router
